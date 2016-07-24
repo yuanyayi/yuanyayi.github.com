@@ -8,5 +8,4 @@ $(function(){
 	// 图片自适应：
 	var itemImage=$('.item-img img');
 	itemImage.addClass('img-responsive');
-	// itemImage.height(parseInt($('.item-img').first().width()*0.62));
 });
