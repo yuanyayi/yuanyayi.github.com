@@ -4,89 +4,159 @@
 	<meta charset="UTF-8"/>
 	<title>袁雅宜的简历</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="css/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<style type="text/css">
-	
-	</style>
 </head>
+
 <body>
-<!-- 头部，固定顶栏，（滚动一屏后出现） -->
-	<header>
-		<div class="">
-			<h1><b>袁雅宜</b><small>的简历</small></h1>
-			<h4>
-				应聘职位：<b>初级前端</b> 地点：<b>北京</b>
-			</h4>
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" 
+			data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<i class="fa fa-reorder fa-fw"></i>
+			</button>
+			<a class="navbar-brand" href="https://codepen.io/Crystal-YYY/pen/pbLWvw">CrystalY</a>
 		</div>
-		<div>
-			<ul>
-				<li>
-					<dt>手机:</dt>
-					<dd>18501292360</dd>
-				</li>
-				<li>
-					<dt>邮箱:</dt>
-					<dd>18501292360@163.com</dd>
-				</li>
-				<li>
-					<dt>github:</dt>
-					<dd><a href="https://github.com/yuanyayi" target="_Blank">https://github.com/yuanyayi</a></dd>
-				</li>
-			</ul>
+		<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#home">Home</a></li>
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#portfolio">Portfolio</a></li>
+	        <li><a href="#contact">Contact</a></li>
+	      </ul>
 		</div>
-		<nav>
-			<ul  class="">
-				<li><a>基本信息</a></li>
-				<li><a>职业技能</a></li>
-				<li><a>个人项目</a></li>
+	</nav>
+</header>
+<div class="body">
+		<section id="home">
+			<div class="container">
+				<div class="title">
+					<h1>YuanYaYi的个人空间</h1>
+					<p class="sub-title">一个人的行走范围，就是他的世界。——北岛</p>
+					<p class="sub-title">应聘职位：<b>初级前端</b>&nbsp;&nbsp;地点：<b>北京</b></span></p>
+				</div>
+			<hr/>
+			<ul class="list-inline">
+				<li>
+					<a href="https://codepen.io/Crystal-YYY/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i>Codepen</a>
+				</li>
+				<li>
+					<a href="https://github.com/yuanyayi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a>
+				</li>
+				<li>
+					<a href="http://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i>Linkedin</a>
+				</li>
+				<li>
+					<a href="https://www.freecodecamp.cn/yuanyayi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>FreeCodeCamp</a>
+				</li>
 			</ul>
-		</nav>
-	</header>
-<!-- 内容部分 -->
-	<div class="main-box">
-		<section>
-			<div class="">
-				<h3 class="">基本信息</h3>
-			</div>
-			<div class="text-box">
-				<ul>
-					<dt>个人: </dt><dd>袁雅宜 / 女 / 1990-07</dd><br/>
-					<dt>教育: </dt><dd>本科 / 首都师范大学-计算机科学与技术专业</dd><br/>
-					<dt>英语: </dt><dd>CET-4</dd><br/>
-				</ul>
 			</div>
 		</section>
-		<section>
-			<div class="">
-				<h3 class="">职业技能</h3>
+		<section id="about">
+			<div class="container row">
+				<div class="right col-sm-4 col-sm-push-8 col-xs-12">
+						<div class="photo">
+						<img id="self-photo" src="http://g.10086.cn/pcgamesbbs/attachments/month_1503/15032011198cd26605b5c27f16.jpg"/>
+						</div>
+				</div>
+				<div class="left col-sm-8 col-sm-pull-4 col-xs-12">
+					<div class="title">
+						<h2>关于我</h2>
+						<dl class="list-inline">
+							<dt>个人: </dt><dd>袁雅宜 / 女 / 1990-07</dd><br/>
+							<dt>教育: </dt><dd>本科 / 首都师范大学-计算机科学与技术专业</dd><br/>
+							<dt>英语: </dt><dd>CET-4</dd><br/>
+						</dl>
+						<dl class="list-inline">
+							<dt>Html: </dt><dd alt="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></dd><br/>
+							<dt>CSS: </dt><dd alt="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></dd><br/>
+							<dt>JavaScript: </dt><dd alt="4.5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></dd><br/>
+							<dt>PHP: </dt><dd alt="3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></dd><br/>
+							<dt>PS切图: </dt><dd alt="3.5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i></dd><br/>
+							<dt>C++: </dt><dd alt="3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></dd><br/>
+							<dt>C: </dt><dd alt="4"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></dd><br/>
+							
+						</dl>
+					</div>
+				</div>
 			</div>
-			<ul>
-				<dt>JavaScript: </dt><dd>5</dd><br/>
-				<dt>Html: </dt><dd>5</dd><br/>
-				<dt>CSS: </dt><dd>5</dd><br/>
-				<dt>PS切图: </dt><dd>4</dd><br/>
-				<dt>C: </dt><dd>4</dd><br/>
-				<dt>C++: </dt><dd>3</dd><br/>
-				<dt>PHP: </dt><dd>3</dd><br/>
-			</ul>
 		</section>
-		<section>
-			<div class="">
-				<h3 class="">个人项目</h3>
-				<ul>
-					<dt>仿制极客学院首页</dt>
-					<dd><a href="https://yuanyayi.github.io/07-2-jikeIndex/index.html" target="_blank">DEMO</a></dd>
-					<dd><a href="https://github.com/yuanyayi/07-2-jikeIndex" target="_blank">源代码</a></dd>
-					<dt>CSS3应用：机器猫</dt>
-					<dd><a href="http://htmlpreview.github.io/?https://github.com/yuanyayi/Demo/blob/master/demo-doraemon.html" target="_blank">DEMO</a></dd>
-					<dd><a href="https://github.com/yuanyayi/Demo/blob/master/demo-doraemon.html" target="_blank">源代码</a></dd>
-				</ul>
+		<section id="portfolio">
+			<div class="container">
+				<div class="title">
+					<h2>我能做的</h2>
+					<p class="sub-title"></p>
+				</div>
+				<div class="swap row">
+					<ul>
+						<li>
+							<div class="item col-md-4 col-sm-6 col-xs-12">
+								<div class="item-img"><img src="img/task-jikexueyuan.jpg"></div>
+								<p class="item-detail">仿制极客学院首页：<br/>
+									<a href="https://yuanyayi.github.io/07-2-jikeIndex/index.html" target="_blank">DEMO</a>
+									<a href="https://github.com/yuanyayi/07-2-jikeIndex" target="_blank">Code</a>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="item col-md-4 col-sm-6 col-xs-12">
+								<div class="item-img"><img src="img/task-doraemon.jpg"></div>
+									<p class="item-detail">CSS3应用-机器猫：<br/>
+										<a href="http://htmlpreview.github.io/?https://github.com/yuanyayi/Demo/blob/master/demo-doraemon.html" target="_blank">DEMO</a>
+										<a href="https://github.com/yuanyayi/Demo/blob/master/demo-doraemon.html" target="_blank">Code</a>
+									</p>
+							</div>
+						</li>
+						<!-- 待增加 -->
+					</ul>
+				</div>
 			</div>
 		</section>
-	</div>
+		<section id="contact">
+			<div class="container">
+				<div class="title">
+					<h2>我在这里</h2>
+				</div>
+				<div class="row">
+					<dl class="col-sm-8 col-xs-12">
+						<dt>邮箱：</dt>
+						<dd>callmecrystal@163.com</dd><br/>
+						<dt>手机：</dt>
+						<dd>185-****-2360</dd>
+					</dl>
+					<ul class="col-sm-4 col-xs-12">
+						<li>
+							<a href="https://codepen.io/Crystal-YYY/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i>Codepen</a>
+						</li>
+						<li>
+							<a href="https://github.com/yuanyayi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a>
+						</li>
+						<li>
+							<a href="http://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i>Linkedin</a>
+						</li>
+						<li>
+							<a href="https://www.freecodecamp.cn/yuanyayi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>FreeCodeCamp</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+</div>
+<footer>
+	<ul class="breadcrumb">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#portfolio">Portfolio</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+	<p><small>Copyright &copy; yuanyayi 2016. All Rights Reserved</small></p>
+</footer>
+
 </body>
-<script type="text/javascript" ></script>
+<script type="text/javascript" src="js/script.js"></script>
 </html>

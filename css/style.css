@@ -1,39 +1,137 @@
-/*body {
-	padding-top: 110px;
-}*/
-header {
-	/*position: fixed;
-		top: 0;
-		left: 0;*/
-	width: 100%;
-	box-shadow: 0 1px 5px #ccc;
+@charset "utf-8";
+/* Reset */
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: Myriad Pro;
+	font-size:16px;
+	position: relative;
 }
-nav {
-	cursor: pointer;
-	width: 100%;
-	background-color: #f5f5f5;
-}
-.widthlimit {
-	width: 90%;
-	margin: 0 auto;
-}
-.fullwidth {
-	width: 100%;
-	background-color: #d5d5d5;
-}
-h1, h2 {
-	/*padding-left: 15px;*/
-}
-.main-box, .main-box>section {
-	width: 100%;
-}
-.main-box>section>.text-box {
-	width: 90%;
-	margin: 0 auto;
+ul, ol, dl, li {
+	list-style: none;
 }
 dt, dd {
 	display: inline-block;
 }
-dt {
-	width: 6em;
+dt{
+	width:6em;
+}
+
+/* Page Setting */
+.body {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.body>* ,header,{
+	width: 100%;
+}
+section {
+	height: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: bottom;
+	overflow:hidden;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;  
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.title>h1, .title>h2, .title>h3 {
+	color: rgba(255, 255, 255, 0.8);
+	text-shadow: 2px 1px 2px #000;
+}
+.sub-title {
+	color: #fff;
+}
+hr {
+	width: 90%;
+	box-shadow: 2px 1px 2px #000;
+}
+.photo {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	border: 3px solid #aaa;
+}
+#self-photo {
+	width: 310px;
+	position: absolute;
+	top: 0;
+	left: -50px;
+}
+.item {
+	padding: 0 0.3em;
+}
+.item .item-img {
+	background-color: #b0c4de;
+	display: block;
+	text-align: center;
+}
+.item .item-img img{
+	display: inline-block;
+	margin:auto 0;
+}
+.item .item-detail {
+	height: 2.8em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background: rgba(255,255,255,.5);
+}
+.item .item-detail a{
+	margin:auto 0.5em;
+	text-decoration: underline;
+}
+#home {
+	background-color: #99ccff;
+	background-image: url(../img/office1.jpg);
+}
+@media (max-width:767px) {
+	#home ul.list-inline> li {
+		display: block;
+		margin-bottom: 1.2em;
+		padding: 0;
+	}
+}
+#home .title {
+	background-color: rgba(20, 20, 20, 0.3);
+}
+#about {
+	background-color: #ccffff;
+	background-image: url(../img/office2.jpg);
+}
+#about dl{
+	text-align: left;
+	text-shadow: 2px 1px 2px #ccc;
+}
+#portfolio {
+	background-color: #99ccff;
+	background-image: url(../img/office3.jpg);
+	overflow-y: scroll;
+}
+#portfolio .container{
+	position: relative;
+	top:0;
+	transform: none;
+}
+#contact {
+	background-color: #6699cc;
+	background-image: url(../img/office4.jpg);
+}
+#contact ul,#contact dl{
+	text-align: left;
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+#contact ul .btn {
+	margin-top: 0.2em;
+}
+footer {
+	text-align: left;
 }
