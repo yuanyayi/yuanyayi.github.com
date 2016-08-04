@@ -24,11 +24,6 @@ a,a:hover{
 	margin: 0;
 	padding: 0;
 }
-html,body{
-	height:100%;
-	width: 100%;
-	position: relative;
-}
 .clearfix:after{content: '.';height: 0;display: block;visibility: hidden; clear:both;}
 /* Page Setting */
 .body {
@@ -243,4 +238,59 @@ hr {
 }
 footer {
 	text-align: left;
+}
+/*项目内部的CSS代码*/
+/*谚语*/
+.profile-box{
+	padding: 2em;
+	position: relative;
+}
+.quote{
+  font-family:"华文新魏";
+  font-size:1.5em;
+/*  自定位置  */
+}
+.quote .screen{
+  padding:1em;
+  background-color:#fff;
+  border-radius:10px;
+}
+.quote .quote-text{
+  position:relative;
+}
+.quote .quote-content{
+  padding:0 3em;
+}
+.quote .quote-i{
+  font-size:3em;
+  font-weight:bold;
+}
+.quote .quote-i{
+  display:inline-block;
+  width:100%;
+  text-align:left;
+}
+.quote .quote-i.right,.quote-author.right{
+  text-align:right;
+}
+.quote-author{
+  padding:1em;
+}
+.controller{
+  text-align:right;
+}
+.quote .btn{
+  height:40px;
+  line-height:40px;
+  width:80px;
+  margin:auto 2em;
+  font-family:inherit;
+  font-size:18px;
+  border:none;
+  color:#fff;
+  cursor:pointer;
+}
+.paragraph{
+  color:white;
+  font-size:10px;
 }

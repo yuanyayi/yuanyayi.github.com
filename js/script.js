@@ -1,12 +1,12 @@
 // 简历
 $(function(){
-	//   导航栏active动态效果
-  $('.nav li').on('click',function(){
-    $(this).parent().find('li').removeClass('active');
-    $(this).addClass('active');
-  });
-	// 幻灯片
-	// 幻灯片效果部分代码
+	//	导航栏active动态效果
+	$('.nav li').on('click',function(){
+		$(this).parent().find('li').removeClass('active');
+		$(this).addClass('active');
+	});
+	var bodyTop=$('.body').offset().top;
+	$('.body').css('top','500px');
 });
 // 设定元素初始宽度
 function setFilmItemWidth(){
@@ -95,3 +95,51 @@ $(function(){
 		}
 	});
 });
+// 项目内部代码
+// 随机谚语
+$(function(){ 
+//   初始化
+  getNewQuote();
+  setColor('#483D8B');
+//   更新
+  $('#submit').on('click',function(){
+    getNewQuote();
+    setColor();
+  });
+}); 
+
+function setColor(c){
+  var color=0;
+  if(!c){
+    var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
+  color=colors[Math.floor(Math.random()*13)];
+  }
+ else{
+   color=c;
+ }
+  $(".profile-box").animate({
+    backgroundColor:color
+  },1000);
+  $(".quote .btn").animate({
+    backgroundColor:color
+  },1000);
+  $('.quote').animate({
+    color:color
+  },1000);
+}
+
+function getNewQuote(){
+// 数据来源：天行数据
+  $.ajax({
+    type:"GET",
+    url: "http://api.tianapi.com/txapi/dictum/?key=f0586bef19a64b13fcf729de79286c03",
+    dataType:"json",
+    success:function(data){
+      if(data.msg=="success"){
+        var result=data.newslist;
+        $('.quote-content').html(result[0]["content"]);
+        $('.quote-authorName').html(result[0]["mrname"]);
+      }
+    }
+  });
+}
