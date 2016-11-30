@@ -138,6 +138,10 @@ section h2 span{
 #appList .item .pic{
   height: 480px;
 }
+img.pic {
+  width: 100%;
+  height: auto;
+}
 .item .tocode {
   margin: auto 0.5em;
   padding: 2px 5px;
