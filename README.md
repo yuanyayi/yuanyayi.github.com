@@ -20,7 +20,7 @@ Github：http://yuanyayi.github.io
  - 北京必胜课科技教育有限公司 H5开发、前端开发
  - 主要工作内容：官网改版，配合APP和微信的静态页、活动页开发。
  - 项目：
-   1 使用Vue2+Vuex+Vue-router+axios+amaze-ui，前后端分离方式开发官网。
+ 1 使用Vue2+Vuex+Vue-router+axios+amaze-ui，前后端分离方式开发官网。
 ### 2016.08——2016.11：
  - 北京雅乐梅森科技有限公司 初级web前端开发
  - 主要工作内容：主要使用jQuery和ECharts，系统UI展示更改，静态页开发。
