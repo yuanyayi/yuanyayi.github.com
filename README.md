@@ -1,27 +1,21 @@
-# 袁雅宜 
-## 女/1990.07/北京/  应聘：前端开发
+# yuanyayi.github.com
 
-### 联系方式：
-手机：18501292360
-邮箱：18501292360@163.com
-Github：http://yuanyayi.github.io
+> A Vue.js project
 
-### 基本信息：
-教育：首都师范大学 信息工程学院 计算机科学与技术专业
-外语：大学英语四级（CET4）
+## Build Setup
 
-### 专业技能：
-- 熟练使用H5、CSS3的新特性，熟悉ES6新特性；
-- 能使用Vue2全家桶完整开发网站；
-- 工作中学习并使用过ThinkPHP和MySQL；
-- 工作中学习并使用过Django；
+``` bash
+# install dependencies
+npm install
 
-### 工作经验：
-#### 2016.1——至今：
- - 北京必胜课科技教育有限公司 H5开发、前端开发
- - 主要工作内容：官网改版，配合APP和微信的静态页、活动页开发。
- - 项目：
- 1 使用Vue2+Vuex+Vue-router+axios+amaze-ui，前后端分离方式开发官网。
-#### 2016.08——2016.11：
- - 北京雅乐梅森科技有限公司 初级web前端开发
- - 主要工作内容：主要使用jQuery和ECharts，系统UI展示更改，静态页开发。
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
