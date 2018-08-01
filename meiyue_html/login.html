@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录并绑定账号</title>
+    <!--静止网页转码-->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no"/>
+    <!--WebApp全屏模式   隐藏地址栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--苹果强制全屏显示-->
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <!--强制全屏显示-->
+    <meta name="full-screen" content="yes"/>
+    <!--制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明）-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!--告诉设备忽略将页面中的数字识别为电话号码 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--告诉设备忽略将页面中的地址识别 -->
+    <meta name="format-detection" content="address=no"/>
+    <link rel="icon" type="image/ico" href="../favicon.ico" size="32x32">
+    <script src="../script/moblie-adaptive.js"></script>
+    <!--阿里巴巴图库-->
+    <link rel="stylesheet" href="../meiyue_css/iconfont.css">
+    <link rel="stylesheet" href="../meiyue_css/login.css">
+</head>
+<body>
+<div class="box">
+    <div class="main">
+        <form>
+                <p class="entry"><span class="iconfont icon-guanjiaowangtubiao01"></span><input tel="number" placeholder="请输入您的手机号码" name="phone" id="phone" maxlength="11"></p>
+                <p class="password"><span class="iconfont icon-mima"></span><input type="password" placeholder="请输入密码" name="password" id="password" maxlength="12"><a class="forgetPassword" href="forgetPassword.html">忘记密码?</a></p>
+                <p id="tokenId" style="display: none"></p>
+                <p id="userId" style="display: none"></p>
+        </form>
+        <p class="sure" id="submit">登录</p>
+        <div class="msg">
+            还没有账号？
+            <a href="index.html">立即注册并免费预约体验课</a>
+        </div>
+    </div>
+</div>
+<script src="../script/lib/fingerprint2.min.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/ajax.js"></script>
+<script src="../script/lib/jquery.min.js"></script>
+<script src="../meiyue_js/login.js"></script>
+</body>
+</html>
